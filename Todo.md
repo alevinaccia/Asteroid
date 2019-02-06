@@ -1,0 +1,18 @@
+----***Asteroid***---- Using Phaser 3 
+-
+-
+-[]Configure the movement system!
+    -The spaceship should be able to rotate and move in the whole canvas, after the rotation you should be able to go forward or backwards, depending of where the spaceship is pointing.
+-
+-
+-[]Make The SpaceShip shoot!
+    -The spaceship should be able to shoot a projectyle witch will follow the direction where the spaceship is pointing
+-
+-
+-[]Spawn Random Asteroids!
+    -The spaceship will be "attacked" by asteroids coming from all the directions! (randomly)
+-
+-
+-[]Check collisions
+    -If an asteroids collides with the spaceship, you lose. If a projectyle collides with an asteroid, it will be destroyed (Boom!)
+----***Asteroid***----

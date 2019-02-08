@@ -1,8 +1,8 @@
 ----***Asteroid***---- Using Phaser 3 
 -
 -
--[]Configure the movement system!
-    -The spaceship should be able to rotate and move in the whole canvas, after the rotation you should be able to go forward or backwards, depending of where the spaceship is pointing.
+-[X]Configure the movement system!
+    -The spaceship should be able to rotate and move in the whole canvas, after the rotation you should be able to go forward , depending of where the spaceship is pointing.
 -
 -
 -[]Make The SpaceShip shoot!
@@ -15,4 +15,9 @@
 -
 -[]Check collisions
     -If an asteroids collides with the spaceship, you lose. If a projectyle collides with an asteroid, it will be destroyed (Boom!)
+-
+-
+-[]Implement physics!
+    -When moving the spaceship, we should apply a force to it, not moving adding values to his x position.
+
 ----***Asteroid***----

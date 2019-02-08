@@ -16,14 +16,16 @@ var game = new Phaser.Game(config, this);
 
 function preload() {
 
-    this.load.image('Player', './Assets/spaceship.png');
-    
+    this.load.image('PlayerSprite', './Assets/spaceship.png');
+    this.load.image('LaserSprite', './Assets/laser.png');
+
 }
 
 
 function create() {
 
-   player = new Player(this);
+    player = new Player(this);
+
 
 }
 

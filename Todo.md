@@ -5,7 +5,7 @@
     -The spaceship should be able to rotate and move in the whole canvas, after the rotation you should be able to go forward , depending of where the spaceship is pointing.
 -
 -
--[]Make The SpaceShip shoot!
+-[X]Make The SpaceShip shoot!
     -The spaceship should be able to shoot a projectyle witch will follow the direction where the spaceship is pointing
 -
 -

@@ -1,18 +1,14 @@
-var W = 800;
-var H = 600;
+const glb = {
 
-var fpsScale = 20;
-var x = 0;
+    W : 800,
+    H : 600,
 
-var player;
-var gameController;
-
-var spaceKey;
-
+}
 var config = {
+
     type: Phaser.AUTO,
-    width: W,
-    height: H,
+    width: glb.W,
+    height: glb.H,
     physics: {
         default: 'arcade',
         arcade: {
@@ -26,8 +22,7 @@ var config = {
     }
 };
 
-var game = new Phaser.Game(config, this);
-
+const game = new Phaser.Game(config, this);
 
 function preload() {
 
@@ -50,7 +45,7 @@ function update() {
 
     player.move();
 
-    if(spaceKey.isDown){
+    if (spaceKey.isDown) {
         player.shoot();
     }
 }

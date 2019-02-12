@@ -17,7 +17,7 @@
     -If an asteroids collides with the spaceship, you lose. If a projectyle collides with an asteroid, it will be destroyed (Boom!)
 -
 -
--[]Implement physics!
+-[X]Implement physics!
     -When moving the spaceship, we should apply a force to it, not moving adding values to his x position.
 
 ----***Asteroid***----

@@ -2,7 +2,7 @@
 class Player {
     constructor(contex) {
 
-        this.player = contex.physics.add.sprite(W / 2, H / 2, 'PlayerSprite');
+        this.player = contex.physics.add.sprite(glb.W / 2, glb.H / 2, 'PlayerSprite');
 
         this.rotationSpeed = 0.1;
         this.speed = 2;
@@ -12,6 +12,11 @@ class Player {
         this.gameController = new controller;
         this.fristShot = true;
 
+        //Physics
+        this.player.body.collideWorldBounds = true;
+        this.player.body.bounce.set(0.5);
+
+
         this.cursors = contex.input.keyboard.createCursorKeys();
 
 
@@ -20,11 +25,12 @@ class Player {
     move() {
 
         if (this.cursors.up.isDown) {
-            //Move the player forward
+            //Move the player forward 
 
-            this.player.x += Math.cos(this.player.rotation - Math.PI / 2) * 10;
-            this.player.y += Math.sin(this.player.rotation - Math.PI / 2) * 10;
+            this.player.setAcceleration(Math.cos(this.player.rotation - Math.PI / 2) * 60, Math.sin(this.player.rotation - Math.PI / 2) * 60);
 
+        } else {
+            this.player.setAcceleration(0, 0);
         }
 
         if (this.cursors.left.isDown) {
@@ -51,8 +57,6 @@ class Player {
             this.player.y, //
             this.context) //this
         )
-
-        this.gameController.clearArray(this.laserContainer);
 
     }
 
